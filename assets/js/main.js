@@ -254,6 +254,36 @@
     }
   });
 
+  
+    const swiper = new Swiper('.gallery-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      }
+    });
   /**
    * Testimonials slider
    */
